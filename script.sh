@@ -28,7 +28,9 @@ do
     sudo chmod 700 "/tmp/$username"
     echo "Hello $username" > readme.tmp
     sudo mv readme.tmp /home/studenti/${username}/Readme
+
 done < studenti.txtabc
+
 
 while read line
 do
