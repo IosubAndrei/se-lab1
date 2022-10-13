@@ -1,6 +1,7 @@
 #!/bin/bash
 
 sudo apt-get install -y gparted calibre
+sudo apt-get install -y vim
 
 sudo groupadd profesori
 sudo groupadd studenti
