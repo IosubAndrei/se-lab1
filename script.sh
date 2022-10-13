@@ -1,6 +1,7 @@
 #!/bin/bash
 
 sudo apt-get install -y gparted calibre
+sudo apt-get install -y htop vim
 
 sudo groupadd profesori
 sudo groupadd studenti
@@ -27,7 +28,9 @@ do
     sudo chmod 700 "/tmp/$username"
     echo "Hello $username" > readme.tmp
     sudo mv readme.tmp /home/studenti/${username}/Readme
-done < studenti.txtt
+
+done < studenti.txtabc
+
 
 while read line
 do
